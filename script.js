@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() { // эффекты при загрузке страницы
+document.addEventListener('DOMContentLoaded', function() { 
     const welcomeText = document.getElementById('welcomeText');
     const welcomeOverlay = document.getElementById('welcomeOverlay');
     setTimeout(function() {welcomeText.style.opacity = 0;}, 1000);
@@ -221,22 +221,22 @@ window.onload = function() {
 
       function getNeighborCoords() {
           var neighborCoords = new Array();
-          neighborCoords[0] = this.row - 1; // top row
-          neighborCoords[1] = this.column; // top col
-          neighborCoords[2] = this.row + 1; // bottom row
-          neighborCoords[3] = this.column; // bottom col
-          neighborCoords[4] = this.row; // left row
-          neighborCoords[5] = this.column - 1; // left col
-          neighborCoords[6] = this.row; // right row
-          neighborCoords[7] = this.column + 1; // right col
-          neighborCoords[8] = this.row - 1; // top left row
-          neighborCoords[9] = this.column - 1; // top left col
-          neighborCoords[10] = this.row - 1; // top right row
-          neighborCoords[11] = this.column + 1; // top right col
-          neighborCoords[12] = this.row + 1; // bottom left row
-          neighborCoords[13] = this.column - 1; // bottom left col
-          neighborCoords[14] = this.row + 1; // bottom right row
-          neighborCoords[15] = this.column + 1; // bottom right col
+          neighborCoords[0] = this.row - 1;
+          neighborCoords[1] = this.column;
+          neighborCoords[2] = this.row + 1;
+          neighborCoords[3] = this.column;
+          neighborCoords[4] = this.row;
+          neighborCoords[5] = this.column - 1;
+          neighborCoords[6] = this.row;
+          neighborCoords[7] = this.column + 1;
+          neighborCoords[8] = this.row - 1;
+          neighborCoords[9] = this.column - 1;
+          neighborCoords[10] = this.row - 1;
+          neighborCoords[11] = this.column + 1;
+          neighborCoords[12] = this.row + 1;
+          neighborCoords[13] = this.column - 1;
+          neighborCoords[14] = this.row + 1;
+          neighborCoords[15] = this.column + 1;
           return neighborCoords;
       }
 
