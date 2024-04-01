@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lifegame</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div id="welcomeOverlay">
+    <div id="welcomeText">lifegame</div>
+  </div>
+
+  <h1 class="topText" >Игра "Жизнь"</h1>
+  
+  <section class="section">
+    <div class="allignment">
+      <button id="descriptBtn" class="section__button section__button1">Описание игры</button>
+      <button id="ruleBtn" class="section__button section__button2">Правила игры</button>
+      <button id="historyBtn" class="section__button section__button3">Историческая справка</button>
+    </div>
+  </section>
+
+  <h1 class="topText" >Игровое поле</h1>
+
+  <section class="section">
+    <div class="allignment">
+      <button id="startBtn" type="button" class="section__button__play">Начать игру</button>
+      <button id="pauseBtn" type="button" class="section__button__play">Приостановить игру</button>
+      <button id="resumeBtn" type="button" class="section__button__play">Продолжить игру</button>
+      <button id="resetBtn" type="button" class="section__button__play">Очистить поле</button>
+      <button id="endBtn" type="button" class="section__button__play">Закончить игру</button>
+    </div>
+  </section>
+
+  <div class="modal modal1">
+    <div class="modal__main">
+      <h2 class="modal__title">Описание</h2>
+      <div class="modal__container">
+        <p>Игра “Жизнь” - это клеточный автомат, созданный британским математиком Джоном Конвеем в 1970 году. Суть игры заключается в создании и развитии популяции клеток на двумерной сетке. Клетки могут быть живыми или мертвыми, и их состояние определяется на основе их ближайшего окружения. Цель игры - наблюдать за поведением клеток и создавать интересные паттерны и структуры. Игра “Жизнь” имеет множество интересных свойств и паттернов, которые делают ее увлекательной и сложной для изучения.</p>
+      </div>
+      <button class="modal__close">&#10006;</button>
+    </div>
+  </div>
+
+  <div class="modal modal2">
+    <div class="modal__main">
+      <h2 class="modal__title">Правила</h2>
+      <div class="modal__container">
+        <p>1) Каждая клетка имеет два соседа слева и сверху.<br>
+          2) Клетка рождается, если у нее есть ровно три живых соседа.<br>
+          3) Клетка умирает, если у нее меньше двух или более трех живых соседей.<br>
+          4) Клетка остается живой, если она уже жива и следует правилам рождения и смерти.<br>
+          5) Клетки, которые не следуют правилам рождения и смерти, исчезают.<br>
+          6) Игра продолжается до тех пор, пока все возможные изменения не произойдут.<br>
+          7) Игрок должен наблюдать за развитием клеток и создавать интересные структуры и паттерны.</p>
+      </div>
+      <button class="modal__close">&#10006;</button>
+    </div>
+  </div>
+
+  <div class="modal modal3">
+    <div class="modal__main">
+      <h2 class="modal__title">История</h2>
+      <div class="modal__container">
+        <p>Игра “Жизнь” была создана Джоном Конвеем в 1970 году. Он был математиком и программистом, который работал в Итаке, штат Нью-Йорк. Конвей создал игру, чтобы изучить математические законы, которые управляют поведением клеток. Он использовал компьютерную программу, чтобы симулировать поведение клеток и наблюдать за результатами. Игра стала очень популярной и получила множество наград и премий.</p>
+      </div>
+      <button class="modal__close">&#10006;</button>
+    </div>
+  </div>
+
+</body>
+</html>
